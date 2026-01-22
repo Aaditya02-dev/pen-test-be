@@ -1,0 +1,56 @@
+{
+  "scan": {
+    "uuid": "8c2f6c11-nes-2025",
+    "name": "Internal Network Vulnerability Scan",
+    "scanner": "Nessus",
+    "policy": "Advanced Scan",
+    "start_time": "2025-01-12T09:45:00Z",
+    "end_time": "2025-01-12T10:12:30Z"
+  },
+  "hosts": [
+    {
+      "host_id": "1",
+      "hostname": "localhost",
+      "ip": "127.0.0.1",
+      "os": "Linux",
+      "mac_address": "00:0c:29:aa:bb:cc",
+      "vulnerabilities": [
+        {
+          "plugin_id": 11219,
+          "plugin_name": "Web Server Unauthenticated Access",
+          "plugin_family": "Web Servers",
+          "severity": "High",
+          "cvss_base_score": 7.5,
+          "port": 8080,
+          "protocol": "tcp",
+          "service": "http",
+          "description": "The remote web server does not require authentication. An attacker may be able to access sensitive information.",
+          "solution": "Restrict access to the web server using authentication mechanisms.",
+          "risk_factor": "High",
+          "plugin_output": "The web service responded to an unauthenticated HTTP request.",
+          "references": [
+            "CVE-2019-1234",
+            "CVE-2020-5678"
+          ]
+        },
+        {
+          "plugin_id": 56984,
+          "plugin_name": "SSL / TLS Weak Cipher Suites Supported",
+          "plugin_family": "SSL",
+          "severity": "Medium",
+          "cvss_base_score": 5.0,
+          "port": 443,
+          "protocol": "tcp",
+          "service": "https",
+          "description": "The remote service supports weak SSL cipher suites.",
+          "solution": "Disable weak cipher suites and use strong cryptography.",
+          "risk_factor": "Medium",
+          "plugin_output": "The following weak cipher suites were detected...",
+          "references": [
+            "CVE-2016-0800"
+          ]
+        }
+      ]
+    }
+  ]
+}
