@@ -147,7 +147,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://pen-test-fe-three.vercel.app/",
 ]
 CORS_ALLOW_HEADERS = [
     "accept",
@@ -162,7 +162,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:3000",
+    "https://pen-test-fe-three.vercel.app/",
 ]
 
 SESSION_COOKIE_SAMESITE = 'Lax'
@@ -188,3 +188,4 @@ REST_FRAMEWORK = {
 
 OAUTH_CLIENT_ID = "52ctmFWZcwHzCI6HWqB63xJwc97KFH2q2qXPSCTC"
 OAUTH_CLIENT_SECRET = "pbkdf2_sha256$1000000$9U8zUAWpgfKvOyVXL2yYGw$D328rvP5KeeCwEa2n6pQ4XB5JxIdURZhccx8k8EmgOU="
+
